@@ -61,9 +61,6 @@ end
 function Block:Destroy(): ()
 	self.Destroying:Fire()
 	self.Destroying:Destroy()
-	if self.TypeChanged then
-		self.TypeChanged:Destroy()
-	end
 	self._map = nil
 	self.gridXYZ = nil
 	self.blockType = nil
