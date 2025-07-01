@@ -1,0 +1,10 @@
+[package]
+name = "predicatefunction/greedy-mesher"
+description = "A greedy meshing library"
+version = "0.1.1"
+license = "MIT"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+author = "PredicateFunction"
+
+include = ["src/**", "wally.toml"]
