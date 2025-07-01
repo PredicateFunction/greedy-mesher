@@ -7,4 +7,4 @@ registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 author = "PredicateFunction"
 exclude = ["**"]
-include = ["src", "wally.toml", "default.project.json"]
+include = ["src", "src/**", "wally.toml", "default.project.json"]
