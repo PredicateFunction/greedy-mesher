@@ -1,0 +1,6 @@
+{
+  "name": "greedy-mesher",
+  "tree": {
+    "$path": "src"
+  }
+}
