@@ -1,6 +1,17 @@
 {
   "name": "greedy-mesher",
   "tree": {
-    "$path": "src"
+    "$className": "Folder",
+    "src": {
+      "$path": "src",
+      "Event": {
+        "$path": "Packages/event.lua"
+      },
+      "_Index": {
+        "$className": "Folder",
+        "$path": "Packages/_index"
+      }
+    }
+   
   }
 }

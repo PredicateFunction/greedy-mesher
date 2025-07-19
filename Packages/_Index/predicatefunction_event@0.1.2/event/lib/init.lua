@@ -35,6 +35,18 @@ Event.__tostring = function(): string
 	return "EVENT"
 end
 
+function Thread(func: (...any) -> (), ...: any): ()
+	func(...)
+	while true do
+		table.insert(threads, coroutine.running())
+		Call(coroutine.yield())
+	end
+end
+
+function Call(func: (...any) -> (), ...: any): ()
+	func(...)
+end
+
 function Event.new(): Event
 	return setmetatable({}, Event)
 end
@@ -90,18 +102,6 @@ end
 
 function Event:Destroy(): ()
 	setmetatable(self, nil)
-end
-
-function Thread(func: (...any) -> (), ...: any): ()
-	func(...)
-	while true do
-		table.insert(threads, coroutine.running())
-		Call(coroutine.yield())
-	end
-end
-
-function Call(func: (...any) -> (), ...: any): ()
-	func(...)
 end
 
 return Event

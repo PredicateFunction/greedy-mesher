@@ -1,10 +1,13 @@
 [package]
 name = "predicatefunction/greedy-mesher"
 description = "A greedy meshing library"
-version = "0.1.4"
+version = "0.1.5"
 license = "MIT"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 author = "PredicateFunction"
 exclude = ["**"]
-include = ["src", "src/**", "wally.toml", "default.project.json", "LICENSE.md"]
+include = ["src", "src/**", "wally.toml", "default.project.json", "LICENSE.md", "Packages"]
+
+[dependencies]
+event = "predicatefunction/event@0.1.2"
